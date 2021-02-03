@@ -38,7 +38,8 @@ def main(yolo):
     writeVideo_flag = True
     asyncVideo_flag = False
 
-    file_path = 'video.webm'
+    # file_path = 'video.webm'
+    file_path = 'capture3_816x616.mp4'
     if asyncVideo_flag:
         video_capture = VideoCaptureAsync(file_path)
     else:

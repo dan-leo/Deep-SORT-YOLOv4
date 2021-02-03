@@ -48,6 +48,13 @@ Turning off tracking gave ~12.5fps with YOLO v4.
 YOLO v4 performs much faster and appears to be more stable than YOLO v3. All tests were done using an Nvidia GTX 1070 8gb GPU
  and an i7-8700k CPU.
 
+# Environment
+
+```sh
+conda create --name deepyolo python=3.7 opencv numpy scikit-learn tensorflow ffmpeg keras Pillow matplotlib imutils nomkl
+# conda install nomkl
+```
+
 # Quick start
 [Download](https://drive.google.com/open?id=1cewMfusmPjYWbrnuJRuKhPMwRe_b9PaT) and convert the Darknet YOLO v4 model  to a Keras model by modifying `convert.py` accordingly and run:
 ```

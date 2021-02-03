@@ -21,6 +21,9 @@ from videocaptureasync import VideoCaptureAsync
 
 warnings.filterwarnings('ignore')
 
+# import os
+# os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
 def main(yolo):
 
     # Definition of the parameters
@@ -39,7 +42,10 @@ def main(yolo):
     writeVideo_flag = True
     asyncVideo_flag = False
 
-    file_path = 'video.webm'
+    # file_path = 'video.webm'
+    # file_path = 'multiple306.mp4'
+    # file_path = '10m_stelmark.mp4'
+    file_path = 'capture3_816x616.mp4'
     if asyncVideo_flag :
         video_capture = VideoCaptureAsync(file_path)
     else:
